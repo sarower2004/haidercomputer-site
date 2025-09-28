@@ -106,26 +106,7 @@ include "includes/header.php";
   </div>
 
 
-<script>
-  function toggleDropdown(id) {
-      // Close all other dropdowns
-      let menus = document.getElementsByClassName("dropdown-content");
-      for (let i = 0; i < menus.length; i++) {
-        if (menus[i].id !== id) {
-          menus[i].classList.remove("show");
-        }
-      }
-      // Toggle current dropdown
-      document.getElementById(id).classList.toggle("show");
-    }
 
-    // Close dropdown if clicked outside
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName("dropdown-content");
-        for (let i = 0; i < dropdowns.length; i++) {
-          dropdowns[i].classList.remove("show");
-        }
-      }
-    }
-</script>
+<?php
+  include ""
+?>
