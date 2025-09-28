@@ -1,0 +1,15 @@
+{
+    "name": "haider/computer",
+    "autoload": {
+        "psr-4": {
+            "Haider\\Computer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alaminrahman",
+            "email": "sumonrahman3600@gmail.com"
+        }
+    ],
+    "require": {}
+}
