@@ -36,6 +36,8 @@ if (isset($_POST['login'])) {
         $error = "Email not found!";
     }
 }
+
+
 ?>
 
 <!DOCTYPE html>
