@@ -1,0 +1,131 @@
+<?php
+// session_start();
+// if (!isset($_SESSION['student_id'])) {
+//     header("Location: login.php");
+//     exit;
+// }
+
+include "includes/header.php";
+?>
+
+
+   <!-- Header -->
+    <header id="header" class="header" style="position: static;">
+        <div class="container header_container">
+           
+            <div class="title">
+               <a href="#" class="site-logo">
+                 <img src="assets/images/logo.png" alt="">
+              </a>
+              <div class="text">
+                <h1>হায়দার কম্পিউটার ট্রেনিং সেন্টার</h1>
+               <p>সাকোয়া বাজার, বোদা, পঞ্চগড়</p>
+              </div>
+            </div>
+            <!-- Search Bar -->
+            <div class="nav-right">
+                <form
+                    style="display: flex; gap: 10px; border: 1px solid white; padding: 5px 10px; border-radius: 10px;">
+                    <input style="width: 200px; font-size: 1rem; border: none; outline: none; background: transparent; color:white;" type="text"
+                    placeholder="Search" />
+                    <button style="font-size: 1.2rem; background:transparent; border: none; color:white;" type="submit">
+                    <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                   <div class="log">
+                    <a href="logout.php" class="btn btn-primary">Login</a> 
+                    <a href="register.php" class="btn btn-secondary">Register</a>
+                  </div>
+            </div>
+        </div>
+        </header>
+
+        <!-- Navbar Section -->
+          <section>
+            <ul class="navbar">
+              <li class="dropdown">
+                <a href="#">Home</a>
+                <div class="dropdown-content">
+                  <a href="#">Home 1</a>
+                  <a href="#">Home 2</a>
+                  <a href="#">Home 3</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">About</a>
+                <div class="dropdown-content">
+                  <a href="#">Team</a>
+                  <a href="#">History</a>
+                  <a href="#">Mission</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                  <a href="#">Web Design</a>
+                  <a href="#">Development</a>
+                  <a href="#">SEO</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Courses</a>
+                <div class="dropdown-content">
+                  <a href="#">Web</a>
+                  <a href="#">Programming</a>
+                  <a href="#">Graphics</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Blog</a>
+                <div class="dropdown-content">
+                  <a href="#">Latest News</a>
+                  <a href="#">Tutorials</a>
+                  <a href="#">Events</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#">Contact</a>
+                <div class="dropdown-content">
+                  <a href="#">Email</a>
+                  <a href="#">Phone</a>
+                  <a href="#">Location</a>
+                </div>
+              </li>
+            </ul>
+          </section>
+      <!-- End of Header -->
+
+      <!-- Banner part start -->
+ <div class="banner">
+    <div class="banner-head">
+      <h1>হায়দার কম্পিউটার প্রশিক্ষণ কেন্দ্রে আপনাকে স্বাগতম।</h1>
+      <p>প্রযুক্তিগত প্রশিক্ষণই আগামী দিনের মূলধন দক্ষতা অর্জনে এগিয়ে থাকুন প্রযুক্তির সাথে
+          জ্ঞানই শক্তি, প্রশিক্ষণেই সফলতা</p>
+    </div>
+  </div>
+
+
+<script>
+  function toggleDropdown(id) {
+      // Close all other dropdowns
+      let menus = document.getElementsByClassName("dropdown-content");
+      for (let i = 0; i < menus.length; i++) {
+        if (menus[i].id !== id) {
+          menus[i].classList.remove("show");
+        }
+      }
+      // Toggle current dropdown
+      document.getElementById(id).classList.toggle("show");
+    }
+
+    // Close dropdown if clicked outside
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        for (let i = 0; i < dropdowns.length; i++) {
+          dropdowns[i].classList.remove("show");
+        }
+      }
+    }
+</script>
