@@ -30,13 +30,14 @@ if (isset($_POST['register'])) {
 <head>
     <title>Student Registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="bg-light">
-<div class="container mt-5">
+    <div class="container mt-3">
     <div class="row justify-content-center">
         <div class="col-md-5">
             <div class="card">
-                <div class="card-header bg-primary text-white">Student Registration</div>
+                <div class="card-header  register-title">Student Registration</div>
                 <div class="card-body">
                     <?php if(isset($error)) echo "<div class='alert alert-danger'>$error</div>"; ?>
                     <form method="POST">
@@ -57,7 +58,7 @@ if (isset($_POST['register'])) {
                             <input type="password" name="password" class="form-control" required>
                         </div>
                         <button type="submit" name="register" class="btn btn-success">Register</button>
-                        <a href="login.php" class="btn btn-link">Already registered? Login</a>
+                        <a href="?id=login" class="btn btn-link">Already registered? Login</a>
                     </form>
                 </div>
             </div>

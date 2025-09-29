@@ -38,18 +38,11 @@ if (isset($_POST['login'])) {
 }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Login</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="bg-light">
-<div class="container mt-5">
+<div class="container mt-3">
     <div class="row justify-content-center">
-        <div class="col-md-5">
-            <div class="card">
-                <div class="card-header bg-dark text-white">Login</div>
+        <div class="col-md-6">
+            <div class="card" style="overflow:hidden;">
+                <div class="card-heade login-title">Login</div>
                 <div class="card-body">
                     <?php if(isset($error)) echo "<div class='alert alert-danger'>$error</div>"; ?>
                     <form method="POST">
@@ -62,12 +55,10 @@ if (isset($_POST['login'])) {
                             <input type="password" name="password" class="form-control" required>
                         </div>
                         <button type="submit" name="login" class="btn btn-primary">Login</button>
-                        <a href="register.php" class="btn btn-link">Register as Student</a>
+                        <a href="?id=register" class="btn btn-link">Register as Student</a>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-</body>
-</html>
