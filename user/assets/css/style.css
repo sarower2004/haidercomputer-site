@@ -9,7 +9,7 @@
     --primary-color: #2c3e50;
     --secondary-color: #ffffff;
     --background-color: #f4f6f9;
-    --nav-color: linear-gradient(90deg, #8a35f9, #3498db);
+    --nav-color: linear-gradient(180deg, #8a35f9, #3498db);
     --button-color: linear-gradient(90deg, #2980b9, #8a35f9);
     --button-hover-color: linear-gradient(90deg, #8a35f9, #2980b9);
 }
@@ -80,6 +80,7 @@ header {
     
 }
 
+
 /* dropdown */
 /* Navbar container */
 .navbar {
@@ -87,7 +88,7 @@ header {
   justify-content: center;
   padding: 0;
   margin: 0;
-  background: var(--nav-color);
+  background: rgb(128, 39, 244);
 
 }
 
@@ -114,11 +115,11 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  background: var(--nav-color);
   border-radius: 20px;
   min-width: 180px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 99;
+  overflow: hidden;
 }
 
 /* Dropdown links */
@@ -142,6 +143,9 @@ header {
   align-items: center;
   gap: 10px;
 }
+.nav-right input::placeholder{
+  color: white;
+}
 
 .title{
   display: flex;
@@ -154,6 +158,8 @@ header {
   font-size: 1.5rem;
   color: white;
   margin-left: 20px;
+  font-weight: 700;
+
 }
 .title p{
   font-size: 1rem;
@@ -168,7 +174,6 @@ header {
 }
 .title .text{
   padding-top: 10px;
-  line-height: 100%;
 }
 
 .log{
@@ -228,22 +233,145 @@ header {
 /* register */
 .register-title{
   color: var(--background-color);
-  background: var(--button-color);
   padding: 15px 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
+  
 }
+.register-section {
+      width: 100%;
+      height: 700px;
+      background-image: url("../images/banner.png"); /* এখানে তোমার ছবির নাম দাও */
+      background-size: cover;   /* পুরো banner জুড়ে fill হবে */
+      background-position: center; /* center এ show করবে */
+      display: flex;
+      justify-content: center;
+      color: var(--background-color);
+}
+.register-wrapper{
+  border-radius: 20px;
+  border: 2px solid #8a35f9;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  backdrop-filter: blur(20px);
+
+
+}
+.register-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+.register-items input{
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--background-color);
+  border-radius: 0;
+}
+.register-items input:focus {
+  background: transparent !important;
+  box-shadow: none !important;
+  
+}
+.register-items .register-input input{
+  width: 400px;
+  color: var(--background-color);
+  font-size: 1.2rem;
+}
+.register-items .register-btn{
+  width: 100px;
+  height: 50px;
+  background: var(--button-color);
+}
+.register-btn:active{
+  transform: scale(1.1);
+}
+
+.register-items a{
+  color: var(--background-color);
+}
+.register-items a:hover{
+  color: #8a35f9;
+}
+
+
 /* loging */
 .login-title{
   color: var(--background-color);
-  background: var(--button-color);
   padding: 15px 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
+  
+}
+.login-section {
+      width: 100%;
+      height: 700px;
+      background-image: url("../images/banner.png"); /* এখানে তোমার ছবির নাম দাও */
+      background-size: cover;   /* পুরো banner জুড়ে fill হবে */
+      background-position: center; /* center এ show করবে */
+      display: flex;
+      justify-content: center;
+      color: var(--background-color);
+}
+.login-wrapper{
+  border-radius: 20px;
+  border: 2px solid #8a35f9;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  backdrop-filter: blur(20px);
+
+
+}
+.login-items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
+.login-items input{
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--background-color);
+  border-radius: 0;
+}
+.login-items input:focus {
+  background: transparent !important;
+  box-shadow: none !important;
+  
+}
+.login-items .input-email-pass input{
+  width: 400px;
+  color: var(--background-color);
+  font-size: 1.2rem;
+}
+.login-items .login-btn{
+  width: 100px;
+  height: 50px;
+  background: var(--button-color);
+}
+.login-btn:active{
+  transform: scale(1.1);
 }
 
+.login-items a{
+  color: var(--background-color);
+}
+.login-items a:hover{
+  color: #8a35f9;
+}
 
 
   
