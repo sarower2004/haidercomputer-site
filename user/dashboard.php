@@ -17,8 +17,10 @@ if (isset($_GET['id'])) {
         require "register.php";
     } elseif ($id === "login") {
         require "login.php";
-    } elseif ($id == 3) {
-        require "services.php";
+    } elseif ($id === "instuctor-page") {
+        require "instructor.php";
+    }elseif ($id === "course-page") {
+        require "courses.php";
     } else {
         // If id does not match, load default
         require "home.php";

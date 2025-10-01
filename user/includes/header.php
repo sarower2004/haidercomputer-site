@@ -7,6 +7,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 
 </head>
 <body>
@@ -46,15 +47,10 @@
           <section>
             <ul class="navbar">
               <li class="dropdown">
-                <a href="index.php">Home</a>
-                <div class="dropdown-content">
-                  <a href="#">Home 1</a>
-                  <a href="#">Home 2</a>
-                  <a href="#">Home 3</a>
-                </div>
+                <a href="index.php"><i class="bi bi-house-fill"></i></a>
               </li>
               <li class="dropdown">
-                <a href="#">About</a>
+                <a href="#">আমাদের কথা</a>
                 <div class="dropdown-content">
                   <a href="#">Team</a>
                   <a href="#">History</a>
@@ -62,31 +58,20 @@
                 </div>
               </li>
               <li class="dropdown">
-                <a href="#">Services</a>
+                <a href="?id=course-page">কোর্স</a>
+              </li>
+              <li class="dropdown">
+                <a href="?id=instuctor-page">ইনেস্ট্রাক্টর</a>
+              </li>
+              <li class="dropdown">
+                <a href="#">গ্যালারী</a>
                 <div class="dropdown-content">
-                  <a href="#">Web Design</a>
-                  <a href="#">Development</a>
-                  <a href="#">SEO</a>
+                  <a href="#">ফটো গ্যালারি</a>
+                  <a href="#">ভিডিও গ্যালারি</a>
                 </div>
               </li>
               <li class="dropdown">
-                <a href="#">Courses</a>
-                <div class="dropdown-content">
-                  <a href="#">Web</a>
-                  <a href="#">Programming</a>
-                  <a href="#">Graphics</a>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a href="#">Blog</a>
-                <div class="dropdown-content">
-                  <a href="#">Latest News</a>
-                  <a href="#">Tutorials</a>
-                  <a href="#">Events</a>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a href="#">Contact</a>
+                <a href="#">যোগাযোগ</a>
                 <div class="dropdown-content">
                   <a href="#">Email</a>
                   <a href="#">Phone</a>

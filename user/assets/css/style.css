@@ -108,7 +108,7 @@ header {
 }
 
 .dropdown > a:hover {
-  color: #8a35f9;
+  color: #3498db;
 }
 
 /* Dropdown content (hidden by default) */
@@ -120,6 +120,8 @@ header {
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   z-index: 99;
   overflow: hidden;
+  background: var(--nav-color);
+
 }
 
 /* Dropdown links */
@@ -373,5 +375,45 @@ header {
   color: #8a35f9;
 }
 
-
-  
+/* details card */
+/* .details-section{
+  margin-top: -120px;
+} */
+ .details-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 100px;
+ }
+.details-card{
+  width: 350px;
+  height: 200px;
+  padding: 20px;
+  background-color: #fe6200d6;
+  color: #313131f7;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  margin-top: -100px;
+  transform: translateY(30px);
+  animation: detail-card 3s linear infinite;
+}
+@keyframes detail-card {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(30px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.details-icon{
+  font-size: 4rem;
+}
