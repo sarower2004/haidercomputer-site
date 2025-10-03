@@ -52,9 +52,9 @@
               <li class="dropdown">
                 <a href="#">আমাদের কথা</a>
                 <div class="dropdown-content">
-                  <a href="#">Team</a>
-                  <a href="#">History</a>
-                  <a href="#">Mission</a>
+                  <a href="#">মিশন-ভীষণ</a>
+                  <a href="#">আমাদের ইতিহাস</a>
+                  <a href="#">আমাদের লক্ষ্য</a>
                 </div>
               </li>
               <li class="dropdown">
@@ -73,9 +73,9 @@
               <li class="dropdown">
                 <a href="#">যোগাযোগ</a>
                 <div class="dropdown-content">
-                  <a href="#">Email</a>
-                  <a href="#">Phone</a>
-                  <a href="#">Location</a>
+                  <a href="#">ইমেইল</a>
+                  <a href="#">ফোন</a>
+                  <a href="#">অবস্থান</a>
                 </div>
               </li>
             </ul>
