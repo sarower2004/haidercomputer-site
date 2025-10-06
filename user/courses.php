@@ -1,6 +1,10 @@
-<section class="course-section"></section>
+<section class="course-section">
    <div class="course-wrapper">
     <h1 class="heading">আমাদের কোর্স সমূহ</h1>
+    <p class="sub-heading">কম্পিউটার শিক্ষা, দক্ষতা উন্নয়ন ও পেশাগত প্রশিক্ষণ</p>
+    <div class="gray-line">
+      <div class="blue-line"></div>
+    </div>
     <div class="course-container">
       <div class="course-card">
         <div class="course-image">

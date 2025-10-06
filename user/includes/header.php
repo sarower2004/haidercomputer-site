@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<header id="header" class="header" style="position: static;">
+<header id="header" class="header" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
         <div class="container header_container">
            
             <div class="title">
@@ -44,9 +44,9 @@
         </header>
 
         <!-- Navbar Section -->
-          <section>
-            <ul class="navbar">
-              <li class="dropdown">
+          <section style="position: fixed; top: 100px; left: 0; right: 0; z-index: 999; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <ul class="navbar" style="margin: 0; padding: 0;">
+              <li class="dropdown" style="margin-top: 0;">
                 <a href="index.php"><i class="bi bi-house-fill"></i></a>
               </li>
               <li class="dropdown">

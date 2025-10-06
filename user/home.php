@@ -40,4 +40,8 @@
   </div>
 </section>
 
-<?php include "courses.php"; ?>
+<?php 
+include "courses.php";
+include "instructor.php";
+include "testimonial.php";
+?>
